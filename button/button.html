@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button</title>
+    <style>
+        .btn{
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+            padding: 10px 20px 10px 20px;
+            margin: 20px;
+            /* a태그처럼 inline 태그는 margin값에 영향을 받지 않음*/
+            display: inline-block;
+            /* 각진 네모를 동그랗게 하는 법*/
+            border-radius: 10px;
+            /*장면 전환 효과 - 0.1초간 장면 전환 한다.*/
+            transition: all 0.1s;
+             
+
+        }
+        /* 눌렀을때 효과 제공*/
+        .btn:active{
+            transform: translateY(10px);
+            
+        }
+        .btn.blue{
+            background-color: cornflowerblue;
+            /*입체감 주기*/
+            border-bottom: 5px solid rgb(14, 56, 133);
+        }
+        .btn.blue:active{
+            border-bottom: 3px solid rgb(14, 56, 133);
+            
+            }
+        .btn.red{
+            background-color: crimson;
+        }
+    </style>    
+
 </head>
 <body>
     <a class="btn blue" href="#blue">blue</a>
