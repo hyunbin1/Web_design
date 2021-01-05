@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>섬네일</title>
+    <style>
+        .thumbnail{
+            margin:10px;
+            width: 150px;
+            height:150px;
+            /*전체 사진이 표시하기*/
+            background-size: cover;
+            background-repeat: no-repeat;        
+            background-position: center center;
+        }
+        .thumbnail.round{
+            border-radius: 10%;
+        }
+        .thumbnail.circle{
+            border-radius: 100%;
+
+        }
+        
+    </style>
+
 </head>
+
+
 <body>
-    <img src='image/how.jpg' alt="그림">
+    
+    <div class="thumbnail" style="background-image:url('image/how.jpg')"></div>
+    <div class="thumbnail round" style="background-image:url('image/how.jpg')"></div>
+    <div class="thumbnail circle" style="background-image:url('image/how.jpg')"></div>
+    <img src='image/how.jpg' alt="그림" width=300px height= 300px>
     
 </body>
 </html>
