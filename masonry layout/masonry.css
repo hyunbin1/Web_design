@@ -8,7 +8,7 @@ body {
     min-height: 1000px;
 }
 
-/* 웹페이지의 커다란 네모 전체 틀*/
+    /* 웹페이지의 커다란 네모 전체 틀*/
     #columns {
     /* 전체 틀 넓이*/
     column-width: 300px;
@@ -18,22 +18,32 @@ body {
     margin: 50px auto;
     column-gap: 15px;
     }
+
+
     /* 사진들 개별 틀 */
     #columns figure{
         /* inline-block = 태그들을 평평하게 정렬해줌 */
+        background: #fefefe;
         display: inline-block;
-        border: 1px solid rgba(0,0,0,0.2);
+        transition: opacity .4s ease-in-out;
+        border: 1px solid rgba(56, 46, 46, 0.2);
         padding:10px;
-        margin: 0;
+        margin: 0 2px 15px;
         margin-bottom:15px;
+        /*별 효과 모르겠음.. ㅎ*/
+        -webkit-column-break-inside: avoid;
         box-shadow: 3px 1px 8px 2px  rgba(0,0,0,0.5);
     }
+
+
     /* 사진아래 내용 틀 */
     #columns figure figcaption{
         border-top: 1px solid rgba(0,0,0,0.2);
         margin-top: 11px;
         padding: 10px;
     }
+
+
     /* 이미지 구조 조정 */
     #columns figure img{
         width: 100%;
@@ -41,9 +51,16 @@ body {
         /* 사진 윤곽선 아래 부분 굵기, 색 지정해주기 - 디테일 위함*/
         border-bottom: 1px solid #ccc;
     }
+
+
     /* 마우스 가져다가 올렸을때 변화주기 */
     /* columns: hover만 있으면 마우스를 전제 틀 중 아무데나 가져다 올리면 흰색이 된다.
     하지만 figure:not(:hover)을 해주면 마우스에 올린 사진은 흰색이 되지 않는다.*/
     #columns:hover figure:not(:hover){
         opacity: 0.4;
     }
+    /* 반응형 웹을 위해 사용 */
+    @media screen and (max-width: 750px) { 
+        #columns { column-gap: 0px; }
+        #columns figure { width: 100%; }
+      }
