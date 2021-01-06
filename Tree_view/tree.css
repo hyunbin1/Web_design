@@ -1,0 +1,4 @@
+/* 속성 선택자 :checked~ul = 이후에 등장하는 ul태그 전체에 효과를 부여한다. */
+input[type="checkbox"]:checked~ul{
+    display:none;
+}
