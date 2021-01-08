@@ -14,7 +14,7 @@
   list-style: none;
   padding-left:20px;
 }
-
+/* fontello의 content 값은 fontello demo.html에서 볼 수 있음 */
 /* 첫번째 ="tree"*/
 .tree li:before{
   content: "\e800";
