@@ -6,3 +6,4 @@
 .tree input[type="checkbox"]:checked ~ ul {
   display: none;
 }
+

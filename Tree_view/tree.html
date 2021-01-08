@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tree.css" />
     <title>Tree</title>
-    <style></style>
   </head>
   <body>
+    <!--! lable안에 들어가는 내용이 id 값과 일치해야된다!!  -->
+    
+    <!-- Tree start -->
     <ul class="tree">
       <li>
+        <!-- First Root -->
         <input type="checkbox" id="root" />
         <label for="root">ROOT</label>
-        <ul>
+        <!-- Second Root -->
+        <ul class="tree depth">
           <li>
-            <input type="checkbox" id="root" /> <label for="root">root01</label>
+            <!-- li1 -->
+            <input type="checkbox" id="depth_root01" />
+            <label for="depth_root01">root01</label>
             <ul>
               <li>김밥</li>
               <li>떡볶이</li>
@@ -22,16 +28,20 @@
             </ul>
           </li>
           <li>
-            <input type="checkbox" id="root" /> <label for="root">root02</label>
+            <!-- li2 -->
+            <input type="checkbox" id="depth_root02" />
+            <label for="depth_root02">root02</label>
             <ul>
               <li>치킨</li>
               <li>피자</li>
               <li>탕수육</li>
             </ul>
           </li>
+
           <li>
-            <input type="checkbox" id="root" />
-            <label for="root">root03</label>
+            <!-- li3 -->
+            <input type="checkbox" id="depth_root03"/>
+            <label for="depth_root03">root03</label>
             <ul>
               <li>o1</li>
               <li>o2</li>
@@ -39,6 +49,7 @@
             </ul>
           </li>
         </ul>
+        <!-- Second end -->
       </li>
     </ul>
   </body>
