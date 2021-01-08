@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="tree.css" />
+    <link rel="stylesheet" href="tree_emotion/tree_emotion/css/fontello.css"/>
+    
     <title>Tree</title>
   </head>
   <body>
@@ -16,12 +18,12 @@
         <input type="checkbox" id="root" />
         <label for="root">ROOT</label>
         <!-- Second Root -->
-        <ul class="tree depth">
+        <ul class="depth_tree">
           <li>
             <!-- li1 -->
             <input type="checkbox" id="depth_root01" />
             <label for="depth_root01">root01</label>
-            <ul>
+            <ul class="depth_root">
               <!-- 링크 넣는법 <a href=""></a>-->
               <li><a href="">김밥</a></li>
               <li>떡볶이</li>
@@ -32,7 +34,7 @@
             <!-- li2 -->
             <input type="checkbox" id="depth_root02" />
             <label for="depth_root02">root02</label>
-            <ul>
+            <ul class="depth_root">
               <li>치킨</li>
               <li>피자</li>
               <li>탕수육</li>
@@ -43,7 +45,7 @@
             <!-- li3 -->
             <input type="checkbox" id="depth_root03"/>
             <label for="depth_root03">root03</label>
-            <ul>
+            <ul class="depth_root">
               <li>o1</li>
               <li>o2</li>
               <li>o3</li>

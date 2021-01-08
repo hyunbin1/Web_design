@@ -6,9 +6,35 @@
 /* checkbox에 체크하면 그 뒤의 ul부터 다 화면에 안보이게 해주기  */
 .tree input[type="checkbox"]:checked ~ ul {
   display: none;
+
 }
 
 /* 리스트 앞에 o or ㅁ 같은거 없애주기 */
 .tree, .tree ul{
   list-style: none;
+  padding-left:20px;
+}
+
+/* 첫번째 ="tree"*/
+.tree li:before{
+  content: "\e800";
+  font-family: fontello;
+}
+
+/* 두번째 = "depth_tree*/
+.depth_tree li:before{
+  content: "\e800";
+  font-family: fontello;
+}
+
+
+
+/* 세번째 = "depth_root"에 링크 아이콘 넣어주기 */
+.depth_root li:before{
+  content: "\f07b";
+  font-family: fontello;
+}
+
+.depth_root a{
+  color: black;
 }
