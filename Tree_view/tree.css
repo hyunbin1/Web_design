@@ -5,19 +5,37 @@
   padding-left:20px;
 }
 /* fontello의 content 값은 fontello demo.html에서 볼 수 있음 */
+
 /* 첫번째 ="tree"*/
+.tree label{
+  /* 커서 누르는 표시 기능 */
+  cursor:pointer;
+}
+
+
 .tree label:after{
   content: "\e801";
   font-family: fontello;
 }
 
+/* 전체 크기 조정 */
+.tree *{
+  font-size: 10px;
+  width:50px;
+  height: 20px;
+  display:inline-block;
+}
 
 /* 세번째 = "depth_root"에 링크 아이콘 넣어주기 */
+.depth_tree li{
+  padding-top: 5px;
+}
+
+
 .depth_root label:after{
   content: "\f07b";
   font-family: fontello;
 }
-
 
 /* 속성 선택자input[속성] :checked~ul = 이후에 등장하는 ul태그 전체에 효과를 부여한다. */
 /* 체크박스 앞에 표시 지우기 */
@@ -34,7 +52,9 @@
   font-family: fontello;
 }
 
+
 /* 링크 색갈 black */
-.depth_root a{
+.tree a{
+  text-decoration: none;
   color: black;
 }
