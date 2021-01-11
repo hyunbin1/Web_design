@@ -1,5 +1,7 @@
 body{
     margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
     }
 
 a{
@@ -28,17 +30,22 @@ a{
 .navbar.menu{
     list-style: none;
     padding-left: 0;
-
 }
 .navbar.menu li{
     padding: 8px 12px;
 }
+.navbar.menu li:hover{
+    background-color: #d49466;
+    border-radius: 4px;
+}
 
 
 /*navbar links*/
-.navbar.links{
-
+.navbar.icons{
+    list-style: none;
+    color: white;
+    padding-left:0;
 }
-.navbar.links i{
-
+.navbar.icons li{
+    padding:8px 12px;
 }
