@@ -10,7 +10,6 @@ a{
 }
 /*navbar 큰 테두리*/
 .navbar{
-    border: 5px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,4 +47,47 @@ a{
 }
 .navbar.icons li{
     padding:8px 12px;
+}
+
+/* 창을 작게 할때 */
+@media screen and (max-width:768px){
+   
+    /*navbar*/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    
+    /*navbar logo*/
+    .navbar.logo{
+        flex-direction: row;
+    }
+    
+    /*navbar menu*/
+    .navbar.menu{
+        /* 반대축 */
+        align-items: center;
+        width:100%;
+    }
+    .navbar.menu li{
+        width: 100%;
+        text-align: center;
+    }
+    /*navbar icons*/   
+    
+    .navbar.icons{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding-right:0;
+    }
+    .navbar.icons li{
+        padding:4px 12px;
+
+    }
+
+
+
+
 }
