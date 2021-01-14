@@ -1,3 +1,9 @@
+body{
+    background-image: url(../images/bg.jpg);
+    /*백그라운드 사진이 %를 낮추었을때 여러개로 나오는 것을 막기*/
+    background-size: cover;
+}
+
 /* 제일 큰 틀*/
 #wrapper{
     border: 5px solid red;
@@ -11,4 +17,4 @@
 /* 직계의 직계자손들*/
 #wrapper>*>*{
     border: 5px solid blue;
-}
+} 
