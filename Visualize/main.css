@@ -1,0 +1,14 @@
+/* 제일 큰 틀*/
+#wrapper{
+    border: 5px solid red;
+}
+
+/*wrapper의 직계자손 - header, section main, fotter*/
+#wrapper>*{
+    border:5px solid green;
+}
+
+/* 직계의 직계자손들*/
+#wrapper>*>*{
+    border: 5px solid blue;
+}
