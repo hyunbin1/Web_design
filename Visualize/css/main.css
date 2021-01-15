@@ -17,4 +17,10 @@ body{
 /* 직계의 직계자손들*/
 #wrapper>*>*{
     border: 5px solid blue;
-} 
+
+}
+
+/* 프로필 사진 */
+#header .avatar img{
+    border-radius: 100%;
+}
