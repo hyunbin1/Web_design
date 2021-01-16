@@ -2,9 +2,11 @@ body{
     background-image: url(../images/bg.jpg);
     /*백그라운드 사진이 %를 낮추었을때 여러개로 나오는 것을 막기*/
     background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 
-/* 제일 큰 틀*/
+/*! Wrapper (제일 큰 틀) */
 #wrapper{
     border: 5px solid red;
 }
@@ -17,9 +19,14 @@ body{
 /* 직계의 직계자손들*/
 #wrapper>*>*{
     border: 5px solid blue;
-
 }
 
+
+/*! Header */
+#header{
+    
+}
+/*# profile*/
 /* 프로필 span박스 프로필에 두르기 - inline 태그는 부피감을 가지고 있지 않음 - x축으로 나열됨*/
 #header .avatar {
     border-radius: 100%;
@@ -39,4 +46,30 @@ body{
     /* span 태그와 간격 맞추기 */
     display: block;
     
+}
+
+/*# header 글자 */
+#header h1{
+    font-size: 1.5rem;
+    color: rgba(219, 219, 219, 0.8);
+    font-weight: 200;
+    /*아직 폰트를 사용하고 있지 않음*/
+}
+
+#header h1 strong{
+    color: rgb(241, 241, 241);
+}
+
+#header h1 a{
+    color:rgba(255, 255, 255, 0.25);
+    /* a 태그 밑줄 없애주기*/
+    text-decoration: none;
+    /* 밑줄 만들어주기 */
+    border-bottom: 1px dotted rgb(255, 255, 255, 0.25);
+}
+
+#header h1 a:hover{
+    color: rgb(241, 241, 241);
+    border-bottom: 1px dotted rgb(241, 241, 241);
+
 }
