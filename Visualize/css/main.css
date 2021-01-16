@@ -73,3 +73,15 @@ body{
     border-bottom: 1px dotted rgb(241, 241, 241);
 
 }
+
+/* links icon */
+#header ul.icons li{
+    display: inline-block;
+
+    
+}
+
+#header ul.icons li.icon-instagram{
+    content: "\f16d";
+    font-family: fontello;
+}
