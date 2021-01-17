@@ -92,6 +92,11 @@ body{
 }
 
 /*# links icon */
+
+#header ul{
+    margin-bottom: 1rem;
+}
+
 #header ul.icons li{
     display: inline-block;
     /* 테두리 선 만들기 - border에 효과를 주려면 먼저 만들어 주자.*/
@@ -226,4 +231,18 @@ body{
     color:rgba(255, 255, 255, 0.5);
     text-decoration: none;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+
+@media(max-width:480px){
+    #wrapper{
+        margin: 3rem 1rem;
+    }
+    #header ul{
+        margin-bottom: 0.8rem;
+    }
+
+    #main .thumbnails{
+        display: block;
+    }
 }
