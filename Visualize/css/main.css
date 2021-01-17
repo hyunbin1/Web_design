@@ -14,6 +14,9 @@ body{
 
 /*css 안내선 조절 영역*/
 #wrapper{
+    /* 가운데 정렬*/
+    margin: 5rem auto;
+    max-width: 68rem;
 }
 
 /*wrapper의 직계자손 - header, section main, fotter*/
@@ -61,12 +64,13 @@ body{
 
 /*# header h1글자 */
 #header h1{
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: rgba(219, 219, 219, 0.8);
     font-weight: 200;
     /*아직 폰트를 사용하고 있지 않음*/
     margin-bottom: 1.5rem;
-
+    /* 글자간 간격 */
+    line-height: 1.5rem;
 }
 
 #header h1 strong{
@@ -180,6 +184,8 @@ body{
 /*? hover 모음 */
 #header ul.icons li:hover{
     background-color: rgb(255, 255, 255, 0.25);
+    transition: all 0.3s;
+
     }
 
 
