@@ -54,12 +54,15 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.icon-right-hand:before { content: '\e800'; } /* '' */
-.icon-down-hand:before { content: '\e801'; } /* '' */
-.icon-mail:before { content: '\e802'; } /* '' */
+
+/* 필요한 아이콘*/ 
+.icon-instagram-1:before { content: '\f16d'; } /* '' */
 .icon-facebook-circled:before { content: '\f051'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
 .icon-github-circled-alt2:before { content: '\f056'; } /* '' */
 .icon-twitter-circled:before { content: '\f057'; } /* '' */
+
+
+.icon-right-hand:before { content: '\e800'; } /* '' */
 .icon-link:before { content: '\f07b'; } /* '' */
-.icon-instagram-1:before { content: '\f16d'; } /* '' */
+.icon-down-hand:before { content: '\e801'; } /* '' */
