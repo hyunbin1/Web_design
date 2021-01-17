@@ -61,7 +61,7 @@ body{
 
 /*# header h1글자 */
 #header h1{
-    font-size: 1.5rem;
+    font-size: 3vh;
     color: rgba(219, 219, 219, 0.8);
     font-weight: 200;
     /*아직 폰트를 사용하고 있지 않음*/
@@ -198,3 +198,26 @@ body{
 /*! Footer */
 
 
+
+#footer{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+#footer:before{
+    content:"";
+    margin: 1.5rem auto;
+    display: block;
+    /* 선의 넓이 */
+    width: 20rem;
+    border-top:1px solid rgba(255, 255, 255, 0.5);
+}
+
+#footer a{
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
