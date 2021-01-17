@@ -6,7 +6,13 @@ body{
 
 }
 
+
+
+
 /*! Wrapper (제일 큰 틀) */
+
+
+
 #wrapper{
     border: 5px solid red;
 }
@@ -21,7 +27,11 @@ body{
 }
 
 
+
 /*! Header */
+
+
+
 /* 내용물을 가운데에 위치시키고 싶다면 한단계더 넓은 범주에 있는 태그를 사용하기 WITH text-align*/
 #header {
     text-align: center;
@@ -113,4 +123,46 @@ background-color: rgb(255, 255, 255, 0.25);
 
 #header ul.icons .label{
     display: none;
+}
+
+
+
+/*! Main */
+
+
+
+#main{
+    
+}
+
+#main .thumbnails{
+    /*같은 행에 위치*/
+    display: flex;
+}
+
+#main .thumbnails div{
+    /* 각 내용물의 열 크기를 결정 */
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+#main .thumbnails div a{
+
+}
+
+/*사진*/
+#main .thumbnails div a img{
+    width: 100%;
+    border-radius: 0.6rem 0.6rem 0  0 ;
+
+}
+/* 사진 아래 설명 */
+#main .thumbnails div a h3{
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    border-right: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    /* 글자와 칸 사이의 간격 주기*/
+    padding:0.6rem;
 }
