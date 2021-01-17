@@ -32,7 +32,7 @@ body{
 
 
 
-/* 내용물을 가운데에 위치시키고 싶다면 한단계더 넓은 범주에 있는 태그를 사용하기 WITH text-align*/
+/* 내용물(혹은 글자)을 가운데에 위치시키고 싶다면 한단계더 넓은 범주에 있는 태그를 사용하기 WITH text-align*/
 #header {
     text-align: center;
     padding-top:2rem;
@@ -146,23 +146,30 @@ background-color: rgb(255, 255, 255, 0.25);
     margin: 0 1rem;
 }
 
+/*각각의 간격*/
 #main .thumbnails div a{
-
+    /*a 태그는 inline 태그이기 때문에 block설정을 해줘야된다.*/
+    display: block;
+    margin-bottom:1.5rem;
 }
 
 /*사진*/
 #main .thumbnails div a img{
+    display:block;
     width: 100%;
-    border-radius: 0.6rem 0.6rem 0  0 ;
-
+    border-radius: 0.25rem 0.25rem 0  0 ;
 }
 /* 사진 아래 설명 */
 #main .thumbnails div a h3{
-    border-left: 1px solid rgb(255, 255, 255, 0.5);
-    border-right: 1px solid rgb(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-    border-bottom-right-radius: 0.6rem;
-    border-bottom-left-radius: 0.6rem;
+    border-left: 1px solid rgb(255, 255, 255, 0.3);
+    border-right: 1px solid rgb(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
     /* 글자와 칸 사이의 간격 주기*/
     padding:0.6rem;
+    /* 글자 가운데 정렬 */
+    text-align:center;
+    /* 글자 배경색 */
+    background-color: rgb(255, 255, 255, 0.13);
 }
