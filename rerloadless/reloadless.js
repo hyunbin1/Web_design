@@ -4,7 +4,10 @@ $(document).ready(function () {
 
         //url은 바뀌는데 실제 페이지로는 가지 않게 한다. - 기존 url을 사용자가 클릭한 링크로 바꾼다.
         history.pushState(null, null, event.target.href);
-        // 클릭한 웹페이지의 내용을 article에 담아 변화시켜준다. 
+        // 클릭한 웹페이지의 내용을 현재 웹페이지의 article에 담아 변화시켜준다. 
+        // 하지만 이렇게 하면 불러들인 페이지의 모든 내용을 가져오게 된다. $("article").load(event.target.href); -> 따라서 뒤에 article을 추가해준다. 하지만 article만 추가해줬을 경우에 article태그가 중복되어 나타날 수도 있다. 
+        // 따라서 우리는 article 안에 content라는 class를 만들어 article의 중복을 피해준다. 
+        $("article").load(event.target.href + 'article>.content');
         // 웹브라우저는 기본적으로 동작하기로 되어 있는 것을 막는다 - 페이지가 이동하지 않는다.
         event.preventDefault();
 
