@@ -16,7 +16,13 @@ $(document).ready(function () {
     따라서 뒤로가기 버튼을 눌렀을때도 인터넷 브라우져와 서로 통신을 할 수 있어야 된다.
     */
     $(window).on('popstate', function (event) {
-        console.log(location.href);
         $('article').load(location.href + " article>.content");
-    })
+    });
+    let audio = new Audio("IU 내 손을 잡아.mp3");
+    $(document).on("click", ".control .player .play", function (event) {
+        audio.play();
+    });
+    $(document).on("click", ".control .player .pause", function (event) {
+        audio.pause();
+    });
 });
