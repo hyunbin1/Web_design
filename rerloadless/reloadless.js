@@ -11,6 +11,12 @@ $(document).ready(function () {
         // 웹브라우저는 기본적으로 동작하기로 되어 있는 것을 막는다 - 페이지가 이동하지 않는다.
         event.preventDefault();
 
-    });
-
+    })
+    /* history.pushState는 클릭을 했을때 다음 url로 넘어가게 해주는 것이였다. 
+    따라서 뒤로가기 버튼을 눌렀을때도 인터넷 브라우져와 서로 통신을 할 수 있어야 된다.
+    */
+    $(window).on('popstate', function (event) {
+        console.log(location.href);
+        $('article').load(location.href + " article>.content");
+    })
 });
