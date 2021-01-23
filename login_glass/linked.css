@@ -61,6 +61,7 @@ section .color:nth-child(3){
 
 
 
+
 /* 화면 가운데 icon 아래에 있는 선 하나 만들어주기*/
 section::before{
     content: "";
@@ -74,6 +75,7 @@ section::before{
     /*그냥 border만 사용하면 차원의 일그러짐을 느낄수 있다 ㅋㅋㅋ*/
     border-top: 1px solid rgba(255, 255, 255 ,0.5);
 }
+
 
 
 
@@ -111,11 +113,31 @@ ul li a{
     box-shadow: 0 50px 45px rgba(0,0,0,0.1);
     backdrop-filter: blur(2px);
     transition: 0.5s;
+    /*아래에 창에 사선 넣어준 것을 내용물에서만 보이게 하기*/
+    overflow: hidden;
 }
-
 
 ul li a:hover{
     transform: translateY(-20px);
-    box-shadow: 0 50px 45px rgba(0,0,0,0.3);
+    box-shadow: 0 50px 45px rgba(0,0,0,0.2);
     
+}
+
+/* 창을 hover했을때 슈슉! 하는 효과 넣어주기*/
+/* 창 안에 사선으로 선 넣어주기 */
+ul li a::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255 ,0.3);
+    /*배경화면 사선으로 기울이기*/
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+ul li a:hover::before{
+    transform: skewX(45deg) translateX(-150px);
 }
