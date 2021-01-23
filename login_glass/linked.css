@@ -29,10 +29,10 @@ section{
     background: linear-gradient(to bottom, #ff4f8b, #dff1ff);
 }
 
+/* base 색과 nth-child에 우리가 선택한 색들을 그라데이션처럼 섞어준다. */
 section .color{
     border: 5px solid red;
     position: absolute;
-    /* base 색과 nth-child에 우리가 선택한 색들을 그라데이션처럼 섞어준다. */
     filter: blur(150px);
 }
 
@@ -73,4 +73,49 @@ section::before{
     backdrop-filter: blur(5px);
     /*그냥 border만 사용하면 차원의 일그러짐을 느낄수 있다 ㅋㅋㅋ*/
     border-top: 1px solid rgba(255, 255, 255 ,0.5);
+}
+
+
+
+/* 아이콘 창 만들기 */
+/* li아이콘들 가로로 정렬하기 */
+ul{
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+/* a태그 점, 색 없애주고 margin 값 여유 넣어주기*/
+ul li{
+    position: relative;
+    list-style: none;
+    margin:20px;
+    color: green;
+}
+
+/* icon 상자 만들어주기*/
+ul li a{
+    border: 1px solid rgba(255, 255, 255, 0.8 );
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* 유리처럼 만들기 */
+    border-right: 1px solid rgba(255, 255, 255 ,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255 ,0.2);
+    box-shadow: 0 50px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+}
+
+
+ul li a:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 50px 45px rgba(0,0,0,0.3);
+    
 }
