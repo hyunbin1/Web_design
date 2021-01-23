@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
+/* 내용물이 body를 벗어난 부분을 보이지 않게 한다.*/
 body{
-    /* 내용물이 body를 벗어난 부분을 보이지 않게 한다.*/
     overflow: hidden;
 }
 
 
-/* 
+/*
 section =  전체 배경화면 설정하기 위해 만듬
 section 태그에 베이스가 될 배경 색을 그라데이션으로 지정해 준뒤
 section nth-child를 사용하여 우리가 원하는 색갈과 위치를 지정하여 베이스 색 위에 첨가한다. 
@@ -25,7 +25,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*그라데이션: 개념 참고 https://developer.mozilla.org/ko/docs/Web/CSS/linear-gradient() */
+    /*그라데이션: 개념 참고: https://developer.mozilla.org/ko/docs/Web/CSS/linear-gradient() */
     background: linear-gradient(to bottom, #ff4f8b, #dff1ff);
 }
 
@@ -36,7 +36,7 @@ section .color{
     filter: blur(150px);
 }
 
-/* nth-child() = 형제 사이에서의 순서에 따라 요서를 선택한다. https://developer.mozilla.org/ko/docs/Web/CSS/:nth-child */
+/* nth-child() = 형제 사이에서의 순서에 따라 요서를 선택한다. 참고: https://developer.mozilla.org/ko/docs/Web/CSS/:nth-child */
 section .color:nth-child(1){
  background: #ff359b;
  width: 600px;
@@ -60,4 +60,17 @@ section .color:nth-child(3){
 }
 
 
+
 /* 화면 가운데 icon 아래에 있는 선 하나 만들어주기*/
+section::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 50%;
+    /*쌓여질 위치 선택 - 1일수록 맨 아래 깔리는 것 참고: https://developer.mozilla.org/ko/docs/Web/CSS/z-index */
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    /*그냥 border만 사용하면 차원의 일그러짐을 느낄수 있다 ㅋㅋㅋ*/
+    border-top: 1px solid rgba(255, 255, 255 ,0.5);
+}
