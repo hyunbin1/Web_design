@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* css 초기화 */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    
+}
+
+body{
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 창 모두 쓰기 */
+    min-height: 100vh;
+    background: #373737;
+}
+
+/* text Email Validation Check*/
+h3{
+    border: 5px solid gray;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f9f9f9;
+    /* 글자 간 간격*/
+    letter-spacing: 1px;
+    /* 글자와 input간 간격*/
+    margin-bottom: 5px;
+
+}
+
+/* input email*/
+
+#form{
+    border: 2px solid blue;
+    position: relative;
+}
+
+#form .inputBox{
+    border: solid 3px green;
+}
+
+#form #email{
+    /*input 양옆 넓이 늘리기*/
+    width: 300px;
+    background: #292929;
+    /* input 클릭했을시에 테두리에 나오는 효과 없애기*/
+    outline: none;
+    border: none;
+    /*input칭 확장 시키기*/
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
