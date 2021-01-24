@@ -23,3 +23,86 @@ a:hover{
 }
 
 /* start styling*/
+
+body{
+    font-family: 'Oswald', sans-serif;
+    color: #26313c;
+    line-height: 1.5;
+}
+
+/*! main */
+
+/*! navbar */
+.header{
+    position: relative;
+    transition: all 0.7s;
+    z-index: 9;
+}
+
+.header .wrap.d-flex{
+
+}
+
+.header .wrap.d-flex .logo{
+    margin: 0;
+    padding: 16px 0;
+    border: 5px solid gainsboro;
+}
+
+.header .wrap.d-flex .logo a{
+    display: block;
+    border: 5px solid red;
+
+}
+
+.header .wrap.d-flex .logo a img{
+    display: block;
+    border: 5px solid greenyellow;
+    width: 190px;
+
+}
+
+/*! menu */
+.header .wrap.d-flex .menu{
+}
+.header .wrap.d-flex .menu ul{
+    display: flex;
+
+}
+.header .wrap.d-flex .menu ul li{
+    padding: 16px;
+}
+.header .wrap.d-flex .menu ul li a{
+    border: 1px solid red;
+    font-size: 1.2rem;
+    color: white;
+    /* 각 태그마다 각자의 넓이 형성해주기 */
+    padding: 8px;
+    display: block;
+    /* 대문자로 바꾸기 */
+    text-transform: uppercase;
+}
+
+.header .wrap.d-flex .menu ul li a:hover{
+    color: #24cdd5;
+}
+
+
+/*! hambuger sidebar  */
+.header .sidemenu-toggler{}
+.header .sidemenu-toggler a {}
+.header .sidemenu-toggler a span{}
+
+
+/*! side menu bar after clicked hamburger toggle */
+.header .sidemenu{}
+.header .sidemenu .close{}
+
+.header .sidemenu nav{}
+.header .sidemenu nav ul{}
+.header .sidemenu nav ul li{}
+
+/* connect icon */
+footer{}
+footer .social{}
+footer .social a{}
