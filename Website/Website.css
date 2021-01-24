@@ -1,0 +1,25 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background: #212529;
+    height: 2000px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover{
+    text-decoration: none;
+
+}
+
+/* start styling*/
