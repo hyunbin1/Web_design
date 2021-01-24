@@ -20,7 +20,6 @@ body{
 
 /* text Email Validation Check*/
 h3{
-    border: 5px solid gray;
     position: relative;
     font-size: 20px;
     font-weight: 500;
@@ -35,12 +34,10 @@ h3{
 /* input email*/
 
 #form{
-    border: 2px solid blue;
     position: relative;
 }
 
 #form .inputBox{
-    border: solid 3px green;
 }
 
 #form #email{
@@ -55,3 +52,51 @@ h3{
     border-radius: 6px;
     font-size: 12px;
 }
+/* 경고창 */
+#text{
+    /* 경고창을 아래 한칸 다 차지하게 만들기 */
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+}
+
+/* 검색 창 옆에 아이콘 만들어주기 */
+#form.invalid .inputBox:before{
+    content: "";
+    position: absolute;
+    right:12px;
+    top:8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-size: cover;
+    background-image: url(invalid.png);
+    z-index: 1000;
+
+}
+
+#form.valid .inputBox:before{
+    content: "";
+    position: absolute;
+    right:12px;
+    top:7px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-size: cover;
+    background-image: url(valid.png);
+    z-index: 1000;
+}
+
+#form.valid .inputBox{
+    caret-color: #01b101;
+}
+#form.invalid .inputBox{
+    caret-color: #be0505;
+}
+#form .inputBox{
+    caret-color: #fff;
+}
+
