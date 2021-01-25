@@ -105,6 +105,26 @@
                 $(".sidemenu").removeClass("active");
             });
 
+            // sticky navbar
+
+            $(window).scroll(function () {
+                let sc = $(window).scrollTop();
+                if (sc > 150) {
+                    $(".header").addClass("sticky");
+                }
+                else {
+                    $(".header").removeClass("sticky")
+                }
+            });
+
+
+
+
+
+
+
+
+
         });
     </script>
 </body>

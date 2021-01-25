@@ -39,6 +39,19 @@ body{
     z-index: 9;
 }
 
+/*# sticky navbar */
+.header.sticky{
+    width: 100%;
+    position: fixed;
+    background-color: #212529;
+    border: 5px solid green;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+
+}
+
+
+
+
 .header .wrap.d-flex{
 
 }
