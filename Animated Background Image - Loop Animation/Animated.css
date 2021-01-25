@@ -33,15 +33,30 @@ section h2{
     height: 100%;
     overflow: hidden;
     display: flex; 
+    flex-wrap: wrap;
 }
+
+
+
+/*! Animation effect */
+
+/* 블럭들 출현 시간 조절 */
+.banner .blocks:nth-child(even){
+    animation: animate 1s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+3){
+    animation: animate 2.5s ease-in-out forwards;
+}.banner .blocks:nth-child(7n+7){
+    animation: animate 1.5s ease-in-out forwards;
+}
+
 
 /* 애니메이션에 필요한 블럭들 */
 .banner .blocks{
     position: relative;
     display: block;
-    width: 5vh;
-    height: 5vw;
-    background: #fff;
+    width: 5vw;
+    height: 5vh;
     /*? ease in out: animation이 변화하는 속도를 완만하고 부드럽게 작동시킨다. */
     /*? forwards는 애니메ㅣㅇ션이 키프레임 100%도달햇을때 마지막 키프레임을 유지한다. */
     animation: animate 0.75s ease-in-out forwards;
@@ -51,6 +66,7 @@ section h2{
 /*# https://developer.mozilla.org/ko/docs/Web/CSS/@keyframes */
 /* scale: 지정한 크기만큼 확대 또는 축소 (scale1 = 원래 값) 
 translate: 지정한 위치로 이동 */
+
 @keyframes animate{
     0%{ 
         opacity: 0;
@@ -58,10 +74,17 @@ translate: 지정한 위치로 이동 */
     }
     50%{
         opacity: 1;
+        background: url(bg.jpg); 
+        background-position: center;
+        background-attachment: fixed;
+
     }
     100%{
         opacity: 1;
         transform: scale(1) translateY(0px);
+        background: url(bg.jpg);
+        background-position: center;
+        background-attachment: fixed;
 
     }
 
