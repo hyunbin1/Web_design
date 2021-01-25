@@ -1,3 +1,4 @@
+/* reset css */
 html{
     box-sizing: border-box;
     font-size: 16px;
@@ -44,7 +45,6 @@ body{
     width: 100%;
     position: fixed;
     background-color: #212529;
-    border: 5px solid green;
     box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
 
 }
@@ -59,18 +59,15 @@ body{
 .header .wrap.d-flex .logo{
     margin: 0;
     padding: 16px 0;
-    border: 5px solid gainsboro;
 }
 
 .header .wrap.d-flex .logo a{
     display: block;
-    border: 5px solid red;
 
 }
 
 .header .wrap.d-flex .logo a img{
     display: block;
-    border: 5px solid greenyellow;
     width: 190px;
 
 }
@@ -86,7 +83,6 @@ body{
     padding: 16px;
 }
 .header .wrap.d-flex .menu ul li a{
-    border: 1px solid red;
     font-size: 1.2rem;
     color: white;
     /* 각 태그마다 각자의 넓이 형성해주기 */
@@ -233,4 +229,30 @@ body{
     transition: all 0.3s linear;
     margin-right: 5px;
     text-transform: uppercase;
+}
+
+/* Responsive web */
+@media (max-width: 767px){
+    .header .sidemenu{
+        width: 100%;
+    }
+    .header .sidemenu nav a{
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 991px){
+    .header .sidemenu{
+        width: 70%;
+    }
+    .header .sidemenu nav a{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1199px){
+    .header .menu{
+        display: none;
+    }
 }
