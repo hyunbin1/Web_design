@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- https://www.youtube.com/watch?v=pNcAuqInG6s&list=LL&index=1&t=54s -->
+
+<!-- https://www.youtube.com/watch?v=pNcAuqInG6s&t=0s -->
 <html lang="en">
 
 <head>
@@ -90,8 +91,23 @@
 
 
 
+    <!-- Jquery -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(".sidemenu-toggler").click(function () {
+                $(".sidemenu").addClass("active");
+
+            });
+
+            $(".click").click(function () {
+                $("sidemenu").removeClass("active");
+            });
+
+        });
+    </script>
 </body>
 
 </html>

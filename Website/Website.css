@@ -88,14 +88,77 @@ body{
 }
 
 
-/*! hambuger sidebar  */
-.header .sidemenu-toggler{}
-.header .sidemenu-toggler a {}
-.header .sidemenu-toggler a span{}
+/*! hambuger sidebar */
+.header .sidemenu-toggler{
+    position: absolute;
+    width: 40px;
+    padding:6px;
+    top: 23px;
+    right: 40px;
+    border:5px solid blue;
+}
+.header .sidemenu-toggler span{
+    display: block;
+    background-color: white;
+    height: 2px;
+}
+.header .sidemenu-toggler span:nth-child(2){
+    margin: 4px 0 4px auto;
+    width: 75%;
+    transition: 0.3s all;
 
+}   
+.header .sidemenu-toggler span:nth-child(3){
+    margin-left: auto;
+    /* 선 길이 조절 */
+    width: 50%;
+    transition: 0.6s all;
+}   
+
+/* 마우스 올렸을때 2,3번째 bar 꽉차게 해줌*/
+.header .sidemenu-toggler:hover > span:nth-child(2),
+.header .sidemenu-toggler:hover > span:nth-child(3){
+    width: 100%;
+}
 
 /*! side menu bar after clicked hamburger toggle */
-.header .sidemenu{}
+/* 평소에 side메뉴바 숨기기 */
+.header .sidemenu{
+    border: 5px solid peru;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #3bb78f;
+    /* linear-gradient: 그라데이션 효과*/
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64);
+    width: 40%;
+    height: 100vh;
+    /* 제일 앞으로(z) 보내기 */
+    z-index: 999;
+    padding: 4rem;
+    color: white;
+    transform: translate3d(100%,0,0);
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+        
+}
+
+/* after active hamburger bar */
+
+.header .sidemenu.active{ 
+    transform: translate3d(0,0,0);
+}
+ /*17:05*/
+.header .sidemenu .close{
+    height: 30px;
+    width:30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+
 .header .sidemenu .close{}
 
 .header .sidemenu nav{}
