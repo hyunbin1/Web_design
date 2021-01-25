@@ -95,7 +95,6 @@ body{
     padding:6px;
     top: 23px;
     right: 40px;
-    border:5px solid blue;
 }
 .header .sidemenu-toggler span{
     display: block;
@@ -124,7 +123,6 @@ body{
 /*! side menu bar after clicked hamburger toggle */
 /* 평소에 side메뉴바 숨기기 */
 .header .sidemenu{
-    border: 5px solid peru;
     position: fixed;
     top: 0;
     right: 0;
@@ -148,24 +146,78 @@ body{
 .header .sidemenu.active{ 
     transform: translate3d(0,0,0);
 }
- /*17:05*/
+
+/*! sidemenu close button */
 .header .sidemenu .close{
     height: 30px;
     width:30px;
     display: block;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 24px;
 
 }
+/* make an icon "X" */
+.header .sidemenu .close::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 28px;
+    width: 2px;
+    background: white;
+    transform: rotate(45deg);
 
-.header .sidemenu .close{}
+}
+.header .sidemenu .close::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 28px;
+    width: 2px;
+    background: white;
+    transform: rotate(-45deg);
+}
 
-.header .sidemenu nav{}
-.header .sidemenu nav ul{}
-.header .sidemenu nav ul li{}
+/* sidebar menu */
+.header .sidemenu nav ul{
+    padding-top: 30px;;
+}
+.header .sidemenu nav ul li{
+    padding: 15px 0;
+    
+}
+.header .sidemenu nav a{
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
 
 /* connect icon */
-footer{}
-footer .social{}
-footer .social a{}
+.header .sidemenu footer{
+    padding-top: 100px;
+    font-size: 0.9rem;
+    /* footer text upper */
+    text-transform: uppercase;
+}
+.header .sidemenu footer .social{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+}
+.header .sidemenu footer .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    margin-right: 5px;
+    text-transform: uppercase;
+}

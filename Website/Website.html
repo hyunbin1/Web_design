@@ -26,8 +26,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="Website.css">
     <link rel="stylesheet" href="reset.css">
-    <!-- JS -->
-    <script src="Website.js"></script>
     <title>Hello</title>
 </head>
 
@@ -57,9 +55,11 @@
                 <span></span>
                 <span></span>
             </a>
-            <!-- side menu bar after clicked hamburger toggle-->
+            <!-- side menubar after clicked hamburger toggle-->
             <div class="sidemenu">
+                <!-- close button -->
                 <a href="javascript:void(0);" class="close"></a>
+                <!-- menubar -->
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
@@ -76,8 +76,8 @@
                         <a href="#" class="demo-icon icon-facebook"><span class="label"></span></a>
                         <a href="#" class="demo-icon icon-twitter"></a>
                     </ul>
+                    <p>21/01/24 Hyunbin, Made with passion</p>
             </div>
-            <p>21/01/24 Hyunbin, Made with passion</p>
             </footer>
         </header>
 
@@ -101,9 +101,8 @@
                 $(".sidemenu").addClass("active");
 
             });
-
-            $(".click").click(function () {
-                $("sidemenu").removeClass("active");
+            $(".close").click(function () {
+                $(".sidemenu").removeClass("active");
             });
 
         });
