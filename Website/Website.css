@@ -45,7 +45,7 @@ body{
 /*! navbar */
 .header{
     position: relative;
-    transition: all 0.7s;
+    transition: all 0.2s;
     z-index: 9;
 }
 
@@ -247,34 +247,6 @@ body{
     text-transform: uppercase;
 }
 
-/* Responsive web */
-@media (max-width: 767px){
-    .header .sidemenu{
-        width: 100%;
-    }
-    .header .sidemenu nav a{
-        font-size: 1rem;
-    }
-}
-
-
-@media (min-width:768px) and (max-width: 991px){
-    .header .sidemenu{
-        width: 70%;
-    }
-    .header .sidemenu nav a{
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 1199px){
-    .header .menu{
-        display: none;
-    }
-}
-
-
-
 /*! Home Page */
 .home{
     margin-top: 100px;
@@ -337,4 +309,62 @@ body{
     float: none;
     text-align: center;
     border-radius: 50%;
+}
+
+/*! Scroll Bar  */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+    background: #212529;
+    border-left: 0 solid white;
+    border-right: 0 solid white;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background: #0bceaf;
+    width: 0;
+    height: 35%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #ffffff;
+    width: 0;
+    height: 35%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+/*! Responsive web */
+@media (max-width: 767px){
+    .header .sidemenu{
+        width: 100%;
+    }
+    .header .sidemenu nav a{
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 991px){
+    .header .sidemenu{
+        width: 70%;
+    }
+    .header .sidemenu nav a{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1199px){
+    .header .menu{
+        display: none;
+    }
 }
