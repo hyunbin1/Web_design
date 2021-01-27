@@ -74,7 +74,8 @@ body{
 
 .header .wrap.d-flex .logo{
     margin: 0;
-    padding: 16px 0;
+    width: 200px;
+    padding-top: 10px;
 }
 
 .header .wrap.d-flex .logo a{
@@ -310,6 +311,55 @@ body{
     text-align: center;
     border-radius: 50%;
 }
+
+
+/*! About Section */
+
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .gap{
+    margin-left: 90px;
+}
+.about .gap ul li{
+    margin: 0px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.about .gap ul li span{
+    border: 1px solid #0bceaf;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.about .gap ul li span:hover{
+    border: 4px solid red;
+    background-color: transparent !important;
+}
+
+
+.btn-danger{
+    background-color: #24cdd5;
+    color: #ffffff;
+    padding: 14px 20px;
+    border: 1px #ffffff solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*! Scroll Bar  */
 ::-webkit-scrollbar{
