@@ -8,9 +8,18 @@ html{
     box-sizing: inherit;
 }
 
+body, h1, h2, h3, h4, h5, p, ol,ul{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
 body{
     background: #212529;
     height: 2000px;
+}
+ol, ul, li{
+    list-style: none;
 }
 
 img{
@@ -262,4 +271,70 @@ body{
     .header .menu{
         display: none;
     }
+}
+
+
+
+/*! Home Page */
+.home{
+    margin-top: 100px;
+}
+
+/*# Left Row - hero-text */
+.hero-text{
+    font-family: "Poppins", sans-serif;
+}
+.hero-text .title{
+    background-color: #0bceaf;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+.hero-text .name{
+    font-size: 80px;
+    letter-spacing: -1px;
+    margin-top: 30px;
+}
+.hero-text .designation{
+    font-size: 30px;
+}
+.hero-text .email{
+    margin-top: 40px !important;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-text .phone{}
+
+/* SNS Icon */
+.social-icons li{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+/*# Right Row - Profile */
+.hero-img{
+    margin-top: -40px;
+    margin-left: 140px;
+}
+
+.img-border{
+    border: 20px solid rgba(0,0,0,0.07);
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    
+}
+
+.hero-img img{
+    border: 20px solid rgba(0,0,0,0.13);
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    border-radius: 50%;
 }
