@@ -348,14 +348,41 @@ body{
 }
 
 
+/*! Service Section */
 
+/* Each Service Item Container */
+.mh-service .mh-service-item{
+    padding: 20px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Icons */
+.mh-service .mh-service-item .fa{
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
 
+.mh-service .mh-service-item .fa-bullseye{
+    color: #9774fa;
+}
 
+.mh-service .mh-service-item .fa-code{
+    color: #ed7256;
+}
 
+.mh-service .mh-service-item .fa-object-ungroup{
+    color: #2796e2;
+}
 
-
-
+/* Title Text */
+.mh-service h3{
+    font-family: 'Poppins',sans-serif;
+    margin-bottom:18px;
+    font-size: 25px;
+    line-height: 34px;
+}
 
 
 
