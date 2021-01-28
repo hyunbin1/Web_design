@@ -344,7 +344,7 @@ body{
     background-color: #24cdd5;
     color: #ffffff;
     padding: 14px 20px;
-    border: 1px #ffffff solid;
+    border: 1px solid rgba(255,255,255, 0.4);
 }
 
 
