@@ -435,6 +435,7 @@ body{
 
 .mh-skills .mh-professional-skills{
     padding-left: 20%;
+    color: white;
 }
 
 .mh-skills .mh-professional-skills h3{
@@ -445,6 +446,7 @@ body{
     font-weight: 400;
     margin-bottom: 60px;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .mh-skills .mh-professional-progress li{
@@ -458,15 +460,51 @@ body{
 
 .mh-skills .mh-professional-progress .mh-progress{
     margin-bottom: 10px;
-    font: 900 1.14285/1;
+    font: 900 1.14285/1 Cinzel, cursive;
     color: white;
     border: 1px solid white;
+    
 }
 
+/* IN JS 49분 */
+.mh-skills .mh-professional-progress .progressbar-text{
+    border: 1px solid red;
+    color: inherit !important;
+    font-family: 'Poppins', sans-serif;
+}
 
+.progress.progress-line{
+    height: 10px;
+    margin-right: 60px;
+    border: 1px solid purple;
+}
 
+.progress.progress-line .progressbar-text{
+    position: absolute;
+    border: 1px solid blue;
+    top: 50%;
+    left: 100%;
+    width: 60px;
+    transform: translateY(-35%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
 
+/* Profession Circle Section */
+.mh-progress.mh-progress-circle{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    
+}
 
+.mh-progress path:nth-child(1){
+    stroke: rgba(0,0,0,0.0.7);
+}
+
+.mh-progress path:nth-child(2){
+    stroke: #0bceaf !important;
+}
 
 
 
