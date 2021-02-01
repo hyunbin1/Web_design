@@ -15,3 +15,5 @@ let app = http.createServer(function (request, response) {
 
 });
 app.listen(3000);
+
+// 프로토콜://host(domain name).com:포트번호(3000)/path-파일 위치(main)?query string(id=Html&page=12)
