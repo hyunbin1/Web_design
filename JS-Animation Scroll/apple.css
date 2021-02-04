@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.intro{
+    height: 100vh;
+}
+
+.intro video{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
